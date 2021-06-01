@@ -1,0 +1,9 @@
+extends base.pug
+include mixins/video
+
+block content
+  h2 Treding Videos
+  each potato in videos
+    +video(potato)
+  else
+    li no videos
